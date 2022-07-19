@@ -161,3 +161,123 @@ header ul li a {
     margin: 5px 0;
     transform: scale(0.6);
 }
+
+@media (max-width: 991px){
+    section{
+        padding: 40px;
+        padding-bottom: 140px;
+    }
+
+    header{
+        padding: 20px 40px;
+    }
+
+    header .logo{
+        max-width: 60px;   
+    }
+    
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li a{
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    header ul li a:hover{
+        color: #ed0223;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('../assets/img/menu.png');
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .toggleMenu.active{
+        background: url('../assets/img/cerrar.png');
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+
+    .content{
+        flex-direction: column;
+        margin-top: 80px;
+        min-width: 50px;
+        max-width: 650px;
+    }
+
+    .content .textBox{
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .content .textBox h2{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .content .textBox h2 span{
+        font-size: 3rem;
+    }
+
+    .content .textBox a{
+        font-size: 12px;
+        padding: 8px 15px;
+        text-align: center;
+    }
+
+    .content .imgBox{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .content .imgBox img{
+        max-width: 150px;
+    }
+
+    .thumb li img{
+        max-width: 30px;
+    }
+
+    .sci{
+        right: 0;
+        width: 50px;
+        background: rgb(0, 0, 0, 0.2);
+    }
+}
